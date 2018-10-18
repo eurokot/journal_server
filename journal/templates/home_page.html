@@ -1,0 +1,58 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta content="text/html" charset="utf-8">
+	<title>СПбГПМУ</title>
+	<meta name="keywords" content="Медецинский университет, медицина, СПбГПМУ, университет Санкт-Петербург">
+	<link rel="stylesheet" type="text/css" href="{% static 'home_page.css' %}">
+	<title>СПбГПМУ</title>
+<style>
+html{
+background: linear-gradient(to top left, powderblue, pink);
+}
+</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<p class="name"><strong>Электронный журнал СПбГПМУ</strong></p>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<img src="{% static 'media/logo.png' %}" alt="spbgpmu" class="logo">
+			<p class="title_top">
+				<strong>Федеральное государственное бюджетное образовательное учреждение высшего образования</strong>
+			</p>
+			<p class="title_midle">
+				<strong>«Санкт-Петербургский государственный<br>
+				педиатрический медицинский университет»</strong>
+			</p>
+			<p class="title_bottom">
+				<strong>Министерства здравоохранения Российской Федерации</strong>
+			</p>
+		</div>
+	</section>
+	<section>
+		<div class="container_midle">
+			<form>
+				<div class="dws-input">
+					<input type="text" name="username" placeholder="Введите логин" pattern="[A-Za-z]{1,30}">
+				</div>
+				<div class="dws-input">
+					<input type="password" name="password" placeholder="Введите пароль" pattern="[A-Za-z]{1,30}">
+				</div>
+				<input class="button-submit" type="submit" name="submit" value="Войти">
+			</form>
+		</div>
+	</section>
+	<footer>
+		<div class="container_footer">
+			<p class="footer_title_top"><strong>Адрес</strong>: Литовская ул., 2, Санкт-Петербург, 194100</p>
+			<p class="footer_title_bot"><strong>2018 , <em>СПбГПМУ<em></strond></p>
+		</div>
+	</footer>
+
+</body>
+</html>
